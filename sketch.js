@@ -1,10 +1,8 @@
 function setup() {
-  createCanvas3D(600, 400);
-  //Change background color of the scene
-
-  environment(SUNSET);
+  createCanvas3D(windowWidth, windowHeight);
   background3D("white"); 
 
+  environment(SUNSET);
   let albero = beginGroup();
   diffuse("green");
   // sphere(0, 3, 0, 2);
@@ -33,4 +31,7 @@ function setup() {
 
 function draw() {
 
+}function windowResized() {
+
 }
+
